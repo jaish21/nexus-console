@@ -1,0 +1,23 @@
+{
+  "name": "console",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@nexus/module-sdk": "workspace:*",
+    "@nexus/policy-engine": "workspace:*",
+    "@nexus/shell": "workspace:*",
+    "@nexus/types": "workspace:*",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.6.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "^5.8.0",
+    "vite": "^7.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nexus/types": ["packages/types/src/index.ts"],
+      "@nexus/module-sdk": ["packages/module-sdk/src/index.ts"],
+      "@nexus/policy-engine": ["packages/policy-engine/src/index.ts"],
+      "@nexus/shell": ["packages/shell/src/index.ts"]
+    }
+  }
+}
