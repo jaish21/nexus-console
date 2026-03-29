@@ -7,6 +7,7 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@nexus/feature-flags": "workspace:*",
     "@nexus/module-sdk": "workspace:*",
     "@nexus/policy-engine": "workspace:*",
     "@nexus/shell": "workspace:*",

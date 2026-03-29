@@ -39,6 +39,9 @@ importers:
 
   apps/console:
     dependencies:
+      '@nexus/feature-flags':
+        specifier: workspace:*
+        version: link:../../packages/feature-flags
       '@nexus/module-sdk':
         specifier: workspace:*
         version: link:../../packages/module-sdk
@@ -71,6 +74,8 @@ importers:
         specifier: ^7.0.0
         version: 7.3.1(@types/node@25.5.0)
 
+  packages/feature-flags: {}
+
   packages/module-sdk:
     dependencies:
       '@nexus/types':
@@ -85,6 +90,9 @@ importers:
 
   packages/shell:
     dependencies:
+      '@nexus/feature-flags':
+        specifier: workspace:*
+        version: link:../feature-flags
       '@nexus/module-sdk':
         specifier: workspace:*
         version: link:../module-sdk
@@ -98,7 +106,11 @@ importers:
         specifier: ^7.6.0
         version: 7.13.2(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
 
-  packages/types: {}
+  packages/types:
+    dependencies:
+      '@nexus/feature-flags':
+        specifier: workspace:*
+        version: link:../feature-flags
 
 packages:
 

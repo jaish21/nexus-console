@@ -6,16 +6,20 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@axis/types": path.resolve(__dirname, "../../packages/types/src"),
-      "@axis/module-sdk": path.resolve(
+      "@nexus/types": path.resolve(__dirname, "../../packages/types/src"),
+      "@nexus/module-sdk": path.resolve(
         __dirname,
         "../../packages/module-sdk/src",
       ),
-      "@axis/policy-engine": path.resolve(
+      "@nexus/policy-engine": path.resolve(
         __dirname,
         "../../packages/policy-engine/src",
       ),
-      "@axis/shell": path.resolve(__dirname, "../../packages/shell/src"),
+      "@nexus/feature-flags": path.resolve(
+        __dirname,
+        "../../packages/feature-flags/src",
+      ),
+      "@nexus/shell": path.resolve(__dirname, "../../packages/shell/src"),
     },
   },
 });

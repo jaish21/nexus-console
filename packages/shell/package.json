@@ -5,6 +5,7 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "dependencies": {
+    "@nexus/feature-flags": "workspace:*",
     "@nexus/module-sdk": "workspace:*",
     "@nexus/types": "workspace:*",
     "react": "^19.0.0",

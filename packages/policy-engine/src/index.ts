@@ -1,3 +1,4 @@
+import type { FeatureFlag } from "@nexus/feature-flags";
 import type { RuntimeContext, UserRole } from "@nexus/types";
 
 export type Policy<TContext> = (context: TContext) => boolean;
@@ -11,6 +12,11 @@ export const allowRole =
   (roles: UserRole[]): Policy<RuntimeContext> =>
   (context) =>
     roles.includes(context.user.role);
+
+export const allowFlag =
+  (flag: FeatureFlag): Policy<RuntimeContext> =>
+  (context) =>
+    Boolean(context.flags[flag]);
 
 export const allOf =
   <TContext>(...policies: Policy<TContext>[]): Policy<TContext> =>
